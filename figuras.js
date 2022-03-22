@@ -106,9 +106,17 @@ function calcularAlturaTrianguloIsosceles(){
     const input = document.getElementById("InputLado1");
     const lado = input.value;
 
+    const input2 = document.getElementById("InputLado2");
+    const lado2 = input2.value;
+
     const input3 = document.getElementById("InputBase");
     const base = input3.value;
 
-    const area = alturaTrianguloIsosceles(lado, base);
-    alert(area);
+
+    if(lado1 != lado2){
+        console.log("los lados a y b no son iguales");
+    }else{
+        const altura = alturaTrianguloIsosceles(lado, base);
+        alert(altura);
+    }    
 }
